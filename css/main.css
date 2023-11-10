@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Baskerville";
+  src: url("baskerville.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Baskervville&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap");
+
+.head {
+  font-family: Baskervville;
+}
+
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
