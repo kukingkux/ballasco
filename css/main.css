@@ -5,12 +5,92 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Baskervville&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap");
 
-.head {
-  font-family: Baskervville;
+body {
+  overflow: hidden;
+  width: 100%;
 }
 
 p,
 h1 {
   margin: 0;
   padding: 0;
+}
+
+.container-header {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* KEYFRAMES */
+}
+
+.wrapper-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-header {
+  font-family: Baskervville;
+  font-size: 100px;
+  margin: 0;
+  letter-spacing: -5px;
+}
+
+.text-header span {
+  letter-spacing: -10px;
+}
+
+.header-subscript {
+  align-self: baseline;
+}
+
+.header-subscript span {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.scrolling-text {
+  background-color: #222222;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+  margin-left: -8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrolling-text p {
+  animation: marquee 5s linear infinite;
+}
+
+.scrolling-text-top {
+  background-color: #222222;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+  margin-left: -8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrolling-text-top p {
+  animation: marquee-top 5s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(1200%);
+  }
+}
+@keyframes marquee-top {
+  from {
+    transform: translateX(1200%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
